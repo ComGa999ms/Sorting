@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> Looks stupid on mobile devices -->
+    <meta
+      name="description"
+      content="A website for visualizing sorting algorithms"
+    />
+    <meta
+      name="keywords"
+      content="Sorting, Algorithms, Visualizer, Sorting Algorithms, Sorting Algorithms Visualizer, Sorting Visualizer, Algorithms Visualizer, algorithm, sorting, bubble sort, insertion sort, comb sort, radix sort, shell sort, merge sort, quick sort"
+    />
+    <meta name="author" content="PSDat123" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <title>Sorting Algorithms</title>
+    <link rel="icon" href="ICONS/fav_icon.ico" />
+    <link rel="stylesheet" href="ICONS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/Main.scss" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <div class="nav-bar__title">
+          <a class="page-name" href="index.html">SORTING ALGORITHMS</a>
+        </div>
+        <div class="nav-items">
+          <div class="nav-items">
+            <div class="option-wrap"></div>
+            <label for="num" id="ip-name">AMOUNT:</label>
+            <input
+              type="number"
+              class="ip"
+              name="num"
+              value="128"
+              min="2"
+              max="16384"
+              step="1"
+              title="Change the amount"
+            />
+          </div>
+          <div class="nav-items">
+            <button class="btn" id="stop" title="Stop">
+              <i class="fas fa-stop"></i>
+            </button>
+            <button class="btn" id="start" title="Start">
+              <i class="fas fa-play"></i>
+            </button>
+            <button class="btn" id="randomizer" title="Randomize">
+              <i class="fas fa-sync-alt"></i>
+            </button>
+            <button class="btn" id="shuffle" title="Shuffle">
+              <i class="fas fa-random"></i>
+            </button>
+          </div>
+          <label for="modes" id="modes-title">MODES:</label>
+          <div class="modes-wrap" name="modes"></div>
+          <div class="button-con">
+            <button class="btn" id="settings" title="Settings">
+              <i class="fas fa-cog"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <canvas class="main-canvas"></canvas>
+  </body>
+  <script src="./JS/Main.js" defer></script>
+</html>
